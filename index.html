@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TecnoWeb Solutions - Innovación Digital</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+        background: #0b0b0b;
+        color: #fff;
+        overflow-x: hidden;
+    }
+
+    /* ------------------ HERO ------------------ */
+    header {
+        height: 100vh;
+        background: url('https://images.unsplash.com/photo-1526378722484-bd91ca387e72?auto=format&fit=crop&w=1500&q=80') center/cover no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    header::after {
+        content: "";
+        position: absolute;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        background: rgba(0,0,0,0.6);
+    }
+
+    .hero-content {
+        position: relative;
+        text-align: center;
+        max-width: 700px;
+        padding: 20px;
+        animation: fadeIn 2s ease-in-out;
+    }
+
+    .hero-content h1 {
+        font-size: 3.5rem;
+        line-height: 1.2;
+        margin-bottom: 10px;
+        animation: slideDown 1.4s ease;
+    }
+
+    .hero-content p {
+        font-size: 1.2rem;
+        opacity: 0.9;
+        margin-bottom: 25px;
+    }
+
+    .btn {
+        padding: 14px 28px;
+        border-radius: 40px;
+        background: #ffd700;
+        color: #000;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1.1rem;
+        transition: .3s;
+    }
+
+    .btn:hover {
+        background: #fff;
+        transform: scale(1.08);
+    }
+
+    @keyframes fadeIn { 0%{opacity:0;} 100%{opacity:1;} }
+    @keyframes slideDown { 0%{transform:translateY(-40px); opacity:0;} 100%{transform:translateY(0); opacity:1;} }
+
+
+    /* ------------------ SECCIONES ------------------ */
+    section {
+        padding: 80px 10%;
+    }
+
+    h2 {
+        font-size: 2.6rem;
+        margin-bottom: 20px;
+        border-left: 5px solid #ffd700;
+        padding-left: 12px;
+    }
+
+    .services {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 30px;
+        margin-top: 40px;
+    }
+
+    .service-box {
+        padding: 25px;
+        background: #111;
+        border-radius: 18px;
+        transition: .3s;
+        text-align: center;
+        border: 1px solid #222;
+    }
+
+    .service-box:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 0 15px #ffd70055;
+    }
+
+    .service-box img {
+        width: 70px;
+        margin-bottom: 15px;
+    }
+
+    /* ------------------ PORTAFOLIO ------------------ */
+    .portfolio {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 20px;
+        margin-top: 40px;
+    }
+
+    .portfolio img {
+        width: 100%;
+        border-radius: 18px;
+        height: 180px;
+        object-fit: cover;
+        transition: .3s;
+    }
+
+    .portfolio img:hover {
+        transform: scale(1.06);
+        box-shadow: 0 0 15px #ffd700aa;
+    }
+
+    /* ------------------ CEO ------------------ */
+    .ceo-box {
+        margin-top: 40px;
+        padding: 30px;
+        background: #101010;
+        border-left: 5px solid #ffd700;
+        border-radius: 18px;
+    }
+
+    .ceo-box h3 {
+        margin: 0;
+        font-size: 1.7rem;
+        color: #ffd700;
+    }
+
+    .ceo-box p {
+        margin-top: 10px;
+        font-size: 1.1rem;
+        opacity: .8;
+    }
+
+    /* ------------------ FOOTER ------------------ */
+    footer {
+        background: #000;
+        padding: 40px;
+        text-align: center;
+        margin-top: 30px;
+        color: #999;
+    }
+
+</style>
+</head>
+
+<body>
+
+    <!-- HERO -->
+    <header>
+        <div class="hero-content">
+            <h1>TecnoWeb Solutions</h1>
+            <p>Desarrollo Web • Sistemas Modernos • Automatización • Diseño Profesional</p>
+            <a href="#servicios" class="btn">Conocer Servicios</a>
+        </div>
+    </header>
+
+    <!-- SERVICIOS -->
+    <section id="servicios">
+        <h2>Servicios</h2>
+
+        <div class="services">
+            <div class="service-box">
+                <img src="https://cdn-icons-png.flaticon.com/512/1827/1827504.png" />
+                <h3>Desarrollo Web</h3>
+                <p>Creación de páginas modernas, rápidas y optimizadas para empresas.</p>
+            </div>
+
+            <div class="service-box">
+                <img src="https://cdn-icons-png.flaticon.com/512/9068/9068979.png" />
+                <h3>Sistemas Personalizados</h3>
+                <p>Plataformas avanzadas con bases de datos, paneles y automatización.</p>
+            </div>
+
+            <div class="service-box">
+                <img src="https://cdn-icons-png.flaticon.com/512/992/992651.png" />
+                <h3>Diseño Profesional</h3>
+                <p>Branding, interfaces modernas y diseños visuales de alto impacto.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTAFOLIO -->
+    <section>
+        <h2>Proyectos</h2>
+
+        <div class="portfolio">
+            <img src="https://images.unsplash.com/photo-1506765515384-028b60a970df?auto=format&fit=crop&w=870&q=80">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=870&q=80">
+            <img src="https://images.unsplash.com/photo-1487014679447-9f8336841d58?auto=format&fit=crop&w=870&q=80">
+        </div>
+    </section>
+
+    <!-- CEO -->
+    <section>
+        <h2>Nuestro CEO</h2>
+
+        <div class="ceo-box">
+            <h3>Owen Leal – Fundador & CEO</h3>
+            <p>
+                Emprendedor apasionado por la tecnología, la innovación y el desarrollo web.
+                Dirige TecnoWeb Solutions con visión, excelencia y compromiso hacia cada cliente.
+            </p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        © 2025 TecnoWeb Solutions — Innovación Digital Profesional
+    </footer>
+
+</body>
+</html>
